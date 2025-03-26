@@ -1,31 +1,204 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modern Design</title>
-    <meta name="description" content="Elegant, minimalist design solutions" />
-    <meta name="author" content="Modern Design" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Design</title>
+  <meta name="description" content="Elegant, minimalist design solutions">
+  <meta name="author" content="Modern Design">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 
-    <meta property="og:title" content="Modern Design" />
-    <meta property="og:description" content="Elegant, minimalist design solutions" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <meta property="og:title" content="Modern Design">
+  <meta property="og:description" content="Elegant, minimalist design solutions">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@lovable_dev">
+  <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">ModernDesign</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-item active">Home</a></li>
+        <li><a href="#about" class="nav-item">About</a></li>
+        <li><a href="#services" class="nav-item">Services</a></li>
+        <li><a href="#portfolio" class="nav-item">Portfolio</a></li>
+        <li><a href="#contact" class="nav-item">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <section id="home">
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide active">
+          <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Modern Design">
+          <div class="slide-content">
+            <h1>Modern Design Solutions</h1>
+            <p>Creating elegant, functional spaces for modern living</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1616046229478-9901c5536a45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1160&q=80" alt="Interior Design">
+          <div class="slide-content">
+            <h1>Interior Excellence</h1>
+            <p>Transform your space with our design expertise</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1618220179428-22790b461013?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1160&q=80" alt="Minimalist Design">
+          <div class="slide-content">
+            <h1>Minimalist Approach</h1>
+            <p>Less is more with our thoughtful design philosophy</p>
+          </div>
+        </div>
+      </div>
+      <button class="slider-btn prev">&#10094;</button>
+      <button class="slider-btn next">&#10095;</button>
+      <div class="dots-container"></div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Us</h2>
+      <p class="section-subtitle">Dedicated to creating beautiful, functional spaces</p>
+      
+      <div class="content-row">
+        <div class="content-col">
+          <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80" alt="Our Team" class="img-feature">
+        </div>
+        <div class="content-col">
+          <h3>Our Story</h3>
+          <p>Founded in 2015, Modern Design has been at the forefront of creating spaces that blend functionality with aesthetic appeal. Our team of passionate designers brings years of experience and a fresh perspective to every project.</p>
+          <p>We believe that good design should be accessible to everyone, and we work closely with our clients to understand their needs and bring their vision to life.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-subtitle">Comprehensive design solutions for every need</p>
+      
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1092&q=80" alt="Interior Design">
+          <h3>Interior Design</h3>
+          <p>Transform your living spaces with our comprehensive interior design services.</p>
+        </div>
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Commercial Spaces">
+          <h3>Commercial Spaces</h3>
+          <p>Create productive and inspiring workspaces that reflect your brand identity.</p>
+        </div>
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1503174971373-b1f69850bded?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1513&q=80" alt="Residential Design">
+          <h3>Residential Design</h3>
+          <p>Design homes that perfectly balance comfort, functionality, and aesthetic appeal.</p>
+        </div>
+      </div>
+
+      <div class="video-container">
+        <h3>Our Design Process</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Design Process Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2 class="section-title">Our Portfolio</h2>
+      <p class="section-subtitle">Explore our latest projects and designs</p>
+      
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Modern Apartment">
+          </div>
+          <h3>Modern Apartment</h3>
+          <p>A contemporary design for urban living.</p>
+        </div>
+        <div class="portfolio-item">
+          <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Office Space">
+          </div>
+          <h3>Creative Office</h3>
+          <p>An inspiring workspace for a tech startup.</p>
+        </div>
+        <div class="portfolio-item">
+          <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Beach House">
+          </div>
+          <h3>Beach House</h3>
+          <p>A serene coastal retreat with panoramic views.</p>
+        </div>
+        <div class="portfolio-item">
+          <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1587316205943-b15dc52a12e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Minimalist Home">
+          </div>
+          <h3>Minimalist Home</h3>
+          <p>Clean lines and thoughtful details define this space.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-subtitle">Get in touch to start your design journey</p>
+      
+      <div class="contact-container">
+        <div class="contact-form">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h3>Our Information</h3>
+          <p><strong>Address:</strong> 123 Design Street, Creative City</p>
+          <p><strong>Email:</strong> info@moderndesign.com</p>
+          <p><strong>Phone:</strong> (123) 456-7890</p>
+          <div class="social-links">
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Instagram</a>
+            <a href="#" class="social-link">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Modern Design. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  <script src="script.js"></script>
+</body>
 </html>
